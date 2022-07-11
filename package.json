@@ -1,7 +1,7 @@
 {
   "title": "SB Admin 2",
-  "name": "startbootstrap-sb-admin-2-bs5",
-  "version": "4.1.5-beta.5",
+  "name": "startbootstrap-sb-admin-2",
+  "version": "4.1.4",
   "scripts": {
     "start": "node_modules/.bin/gulp watch"
   },
@@ -47,8 +47,9 @@
     "gulp-header": "2.0.9",
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "2.0.0",
-    "gulp-sass": "4.1.0",
+    "gulp-sass": "5.1.0",
     "gulp-uglify": "3.0.2",
-    "merge-stream": "2.0.0"
+    "merge-stream": "2.0.0",
+    "sass": "1.53.0"
   }
 }
