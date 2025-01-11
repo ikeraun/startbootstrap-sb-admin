@@ -1,6 +1,6 @@
 /*!
- * Start Bootstrap - SB Admin 2 v4.1.5-beta.7 (https://startbootstrap.com/theme/sb-admin-2)
- * Copyright 2013-2022 Start Bootstrap
+ * Start Bootstrap - SB Admin 2 v4.1.5-beta.8 (https://startbootstrap.com/theme/sb-admin-2)
+ * Copyright 2013-2025 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-sb-admin-2-bs5/blob/master/LICENSE)
  */
 
@@ -26,6 +26,10 @@ input.form-control:not([disabled]), textarea.form-control:not([disabled]), selec
   font-size: 1.2rem;
 }
 
+ul.sidebar {
+  background-color: #121927;
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -33,7 +37,7 @@ input.form-control:not([disabled]), textarea.form-control:not([disabled]), selec
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #4e73df;
+  --bs-blue: #3248f2;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #e83e8c;
@@ -55,7 +59,7 @@ input.form-control:not([disabled]), textarea.form-control:not([disabled]), selec
   --bs-gray-700: #6e707e;
   --bs-gray-800: #5a5c69;
   --bs-gray-900: #3a3b45;
-  --bs-primary: #4e73df;
+  --bs-primary: #3248f2;
   --bs-secondary: #858796;
   --bs-success: #1cc88a;
   --bs-info: #36b9cc;
@@ -63,7 +67,7 @@ input.form-control:not([disabled]), textarea.form-control:not([disabled]), selec
   --bs-danger: #e74a3b;
   --bs-light: #f8f9fc;
   --bs-dark: #3a3b45;
-  --bs-primary-rgb: 78, 115, 223;
+  --bs-primary-rgb: 50, 72, 242;
   --bs-secondary-rgb: 133, 135, 150;
   --bs-success-rgb: 28, 200, 138;
   --bs-info-rgb: 54, 185, 204;
@@ -257,11 +261,11 @@ sup {
 }
 
 a {
-  color: #4e73df;
+  color: #3248f2;
   text-decoration: none;
 }
 a:hover {
-  color: #3e5cb2;
+  color: #283ac2;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -1823,15 +1827,15 @@ progress {
 }
 
 .table-primary {
-  --bs-table-bg: #dce3f9;
-  --bs-table-striped-bg: #d1d8ed;
+  --bs-table-bg: #d6dafc;
+  --bs-table-striped-bg: #cbcfef;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #c6cce0;
+  --bs-table-active-bg: #c1c4e3;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #ccd2e6;
+  --bs-table-hover-bg: #c6cae9;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #c6cce0;
+  border-color: #c1c4e3;
 }
 
 .table-secondary {
@@ -2014,9 +2018,9 @@ progress {
 .form-control:focus {
   color: #5a5c69;
   background-color: #fff;
-  border-color: #a7b9ef;
+  border-color: #99a4f9;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(50, 72, 242, 0.25);
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
@@ -2202,9 +2206,9 @@ textarea.form-control-lg {
   }
 }
 .form-select:focus {
-  border-color: #a7b9ef;
+  border-color: #99a4f9;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(50, 72, 242, 0.25);
 }
 .form-select[multiple], .form-select[size]:not([size="1"]) {
   padding-right: 0.75rem;
@@ -2271,13 +2275,13 @@ textarea.form-control-lg {
   filter: brightness(90%);
 }
 .form-check-input:focus {
-  border-color: #a7b9ef;
+  border-color: #99a4f9;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(50, 72, 242, 0.25);
 }
 .form-check-input:checked {
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #3248f2;
+  border-color: #3248f2;
 }
 .form-check-input:checked[type=checkbox] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
@@ -2286,8 +2290,8 @@ textarea.form-control-lg {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate {
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #3248f2;
+  border-color: #3248f2;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
@@ -2316,7 +2320,7 @@ textarea.form-control-lg {
   }
 }
 .form-switch .form-check-input:focus {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23a7b9ef'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2399a4f9'/%3e%3c/svg%3e");
 }
 .form-switch .form-check-input:checked {
   background-position: right center;
@@ -2352,10 +2356,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(78, 115, 223, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(50, 72, 242, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(78, 115, 223, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(50, 72, 242, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -2364,7 +2368,7 @@ textarea.form-control-lg {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #4e73df;
+  background-color: #3248f2;
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2379,7 +2383,7 @@ textarea.form-control-lg {
   }
 }
 .form-range::-webkit-slider-thumb:active {
-  background-color: #cad5f5;
+  background-color: #c2c8fb;
 }
 .form-range::-webkit-slider-runnable-track {
   width: 100%;
@@ -2393,7 +2397,7 @@ textarea.form-control-lg {
 .form-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
-  background-color: #4e73df;
+  background-color: #3248f2;
   border: 0;
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2408,7 +2412,7 @@ textarea.form-control-lg {
   }
 }
 .form-range::-moz-range-thumb:active {
-  background-color: #cad5f5;
+  background-color: #c2c8fb;
 }
 .form-range::-moz-range-track {
   width: 100%;
@@ -2797,7 +2801,7 @@ textarea.form-control-lg {
 }
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(50, 72, 242, 0.25);
 }
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {
   pointer-events: none;
@@ -2806,32 +2810,32 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #3248f2;
+  border-color: #3248f2;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #4262be;
-  border-color: #3e5cb2;
+  background-color: #2b3dce;
+  border-color: #283ac2;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #4262be;
-  border-color: #3e5cb2;
-  box-shadow: 0 0 0 0.25rem rgba(105, 136, 228, 0.5);
+  background-color: #2b3dce;
+  border-color: #283ac2;
+  box-shadow: 0 0 0 0.25rem rgba(81, 99, 244, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #3e5cb2;
-  border-color: #3b56a7;
+  background-color: #283ac2;
+  border-color: #2636b6;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(105, 136, 228, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(81, 99, 244, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #3248f2;
+  border-color: #3248f2;
 }
 
 .btn-secondary {
@@ -3045,27 +3049,27 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  color: #4e73df;
-  border-color: #4e73df;
+  color: #3248f2;
+  border-color: #3248f2;
 }
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #3248f2;
+  border-color: #3248f2;
 }
 .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
-  box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(50, 72, 242, 0.5);
 }
 .btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #3248f2;
+  border-color: #3248f2;
 }
 .btn-check:checked + .btn-outline-primary:focus, .btn-check:active + .btn-outline-primary:focus, .btn-outline-primary:active:focus, .btn-outline-primary.active:focus, .btn-outline-primary.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(50, 72, 242, 0.5);
 }
 .btn-outline-primary:disabled, .btn-outline-primary.disabled {
-  color: #4e73df;
+  color: #3248f2;
   background-color: transparent;
 }
 
@@ -3246,11 +3250,11 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #4e73df;
+  color: #3248f2;
   text-decoration: none;
 }
 .btn-link:hover {
-  color: #3e5cb2;
+  color: #283ac2;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #858796;
@@ -3549,7 +3553,7 @@ textarea.form-control-lg {
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #4e73df;
+  background-color: #3248f2;
 }
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: #b7b9cc;
@@ -3590,7 +3594,7 @@ textarea.form-control-lg {
 }
 .dropdown-menu-dark .dropdown-item.active, .dropdown-menu-dark .dropdown-item:active {
   color: #fff;
-  background-color: #4e73df;
+  background-color: #3248f2;
 }
 .dropdown-menu-dark .dropdown-item.disabled, .dropdown-menu-dark .dropdown-item:disabled {
   color: #b7b9cc;
@@ -3712,7 +3716,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #4e73df;
+  color: #3248f2;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -3721,7 +3725,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #3e5cb2;
+  color: #283ac2;
 }
 .nav-link.disabled {
   color: #858796;
@@ -3768,7 +3772,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #4e73df;
+  background-color: #3248f2;
 }
 
 .nav-fill > .nav-link,
@@ -4453,12 +4457,12 @@ textarea.form-control-lg {
   }
 }
 .accordion-button:not(.collapsed) {
-  color: #4668c9;
-  background-color: #edf1fc;
+  color: #2d41da;
+  background-color: #ebedfe;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234668c9'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232d41da'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   transform: rotate(-180deg);
 }
 .accordion-button::after {
@@ -4482,9 +4486,9 @@ textarea.form-control-lg {
 }
 .accordion-button:focus {
   z-index: 3;
-  border-color: #a7b9ef;
+  border-color: #99a4f9;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(50, 72, 242, 0.25);
 }
 
 .accordion-header {
@@ -4571,7 +4575,7 @@ textarea.form-control-lg {
 .page-link {
   position: relative;
   display: block;
-  color: #4e73df;
+  color: #3248f2;
   background-color: #fff;
   border: 1px solid #dddfeb;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -4583,16 +4587,16 @@ textarea.form-control-lg {
 }
 .page-link:hover {
   z-index: 2;
-  color: #3e5cb2;
+  color: #283ac2;
   background-color: #eaecf4;
   border-color: #dddfeb;
 }
 .page-link:focus {
   z-index: 3;
-  color: #3e5cb2;
+  color: #283ac2;
   background-color: #eaecf4;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(50, 72, 242, 0.25);
 }
 
 .page-item:not(:first-child) .page-link {
@@ -4601,8 +4605,8 @@ textarea.form-control-lg {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #3248f2;
+  border-color: #3248f2;
 }
 .page-item.disabled .page-link {
   color: #858796;
@@ -4699,12 +4703,12 @@ textarea.form-control-lg {
 }
 
 .alert-primary {
-  color: #2f4586;
-  background-color: #dce3f9;
-  border-color: #cad5f5;
+  color: #1e2b91;
+  background-color: #d6dafc;
+  border-color: #c2c8fb;
 }
 .alert-primary .alert-link {
-  color: #26376b;
+  color: #182274;
 }
 
 .alert-secondary {
@@ -4798,7 +4802,7 @@ textarea.form-control-lg {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #4e73df;
+  background-color: #3248f2;
   transition: width 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -4880,8 +4884,8 @@ textarea.form-control-lg {
 .list-group-item.active {
   z-index: 2;
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #3248f2;
+  border-color: #3248f2;
 }
 .list-group-item + .list-group-item {
   border-top-width: 0;
@@ -5045,17 +5049,17 @@ textarea.form-control-lg {
 }
 
 .list-group-item-primary {
-  color: #2f4586;
-  background-color: #dce3f9;
+  color: #1e2b91;
+  background-color: #d6dafc;
 }
 .list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
-  color: #2f4586;
-  background-color: #c6cce0;
+  color: #1e2b91;
+  background-color: #c1c4e3;
 }
 .list-group-item-primary.list-group-item-action.active {
   color: #fff;
-  background-color: #2f4586;
-  border-color: #2f4586;
+  background-color: #1e2b91;
+  border-color: #1e2b91;
 }
 
 .list-group-item-secondary {
@@ -5174,7 +5178,7 @@ textarea.form-control-lg {
 }
 .btn-close:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(50, 72, 242, 0.25);
   opacity: 1;
 }
 .btn-close:disabled, .btn-close.disabled {
@@ -6196,10 +6200,10 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-  color: #4e73df;
+  color: #3248f2;
 }
 .link-primary:hover, .link-primary:focus {
-  color: #3e5cb2;
+  color: #283ac2;
 }
 
 .link-secondary {
@@ -6649,7 +6653,7 @@ textarea.form-control-lg {
 }
 
 .border-primary {
-  border-color: #4e73df !important;
+  border-color: #3248f2 !important;
 }
 
 .border-secondary {
@@ -10388,8 +10392,8 @@ a:focus {
 }
 
 .bg-gradient-primary {
-  background-color: #4e73df;
-  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  background-color: #3248f2;
+  background-image: linear-gradient(180deg, #3248f2 10%, #0d23cb 100%);
   background-size: cover;
 }
 
@@ -10529,11 +10533,11 @@ a:focus {
 }
 
 .border-left-primary {
-  border-left: 0.25rem solid #4e73df !important;
+  border-left: 0.25rem solid #3248f2 !important;
 }
 
 .border-bottom-primary {
-  border-bottom: 0.25rem solid #4e73df !important;
+  border-bottom: 0.25rem solid #3248f2 !important;
 }
 
 .border-left-secondary {
@@ -10701,8 +10705,8 @@ a:focus {
   overflow: hidden;
 }
 .topbar .dropdown-list .dropdown-header {
-  background-color: #4e73df;
-  border: 1px solid #4e73df;
+  background-color: #3248f2;
+  border: 1px solid #3248f2;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   color: #fff;
@@ -10851,7 +10855,7 @@ a:focus {
 }
 .sidebar .nav-item .collapse .collapse-inner .collapse-item.active,
 .sidebar .nav-item .collapsing .collapse-inner .collapse-item.active {
-  color: #4e73df;
+  color: #3248f2;
   font-weight: 700;
 }
 .sidebar #sidebarToggle {
@@ -11349,133 +11353,133 @@ form.user .btn-user {
 
 @-webkit-keyframes noise-anim {
   0% {
-    clip: rect(35px, 9999px, 29px, 0);
+    clip: rect(46px, 9999px, 43px, 0);
   }
   5% {
-    clip: rect(46px, 9999px, 5px, 0);
+    clip: rect(53px, 9999px, 45px, 0);
   }
   10% {
-    clip: rect(4px, 9999px, 61px, 0);
+    clip: rect(57px, 9999px, 61px, 0);
   }
   15% {
-    clip: rect(50px, 9999px, 8px, 0);
+    clip: rect(31px, 9999px, 29px, 0);
   }
   20% {
-    clip: rect(87px, 9999px, 78px, 0);
+    clip: rect(74px, 9999px, 24px, 0);
   }
   25% {
-    clip: rect(15px, 9999px, 53px, 0);
+    clip: rect(97px, 9999px, 93px, 0);
   }
   30% {
-    clip: rect(32px, 9999px, 87px, 0);
+    clip: rect(89px, 9999px, 26px, 0);
   }
   35% {
-    clip: rect(16px, 9999px, 58px, 0);
+    clip: rect(47px, 9999px, 21px, 0);
   }
   40% {
-    clip: rect(3px, 9999px, 9px, 0);
+    clip: rect(10px, 9999px, 50px, 0);
   }
   45% {
-    clip: rect(63px, 9999px, 88px, 0);
+    clip: rect(13px, 9999px, 35px, 0);
   }
   50% {
-    clip: rect(56px, 9999px, 93px, 0);
+    clip: rect(18px, 9999px, 20px, 0);
   }
   55% {
-    clip: rect(11px, 9999px, 41px, 0);
+    clip: rect(26px, 9999px, 23px, 0);
   }
   60% {
-    clip: rect(16px, 9999px, 29px, 0);
+    clip: rect(61px, 9999px, 96px, 0);
   }
   65% {
-    clip: rect(82px, 9999px, 43px, 0);
+    clip: rect(18px, 9999px, 9px, 0);
   }
   70% {
-    clip: rect(35px, 9999px, 85px, 0);
+    clip: rect(83px, 9999px, 32px, 0);
   }
   75% {
-    clip: rect(72px, 9999px, 93px, 0);
+    clip: rect(98px, 9999px, 100px, 0);
   }
   80% {
-    clip: rect(25px, 9999px, 11px, 0);
+    clip: rect(89px, 9999px, 1px, 0);
   }
   85% {
-    clip: rect(26px, 9999px, 88px, 0);
+    clip: rect(98px, 9999px, 10px, 0);
   }
   90% {
-    clip: rect(45px, 9999px, 91px, 0);
+    clip: rect(27px, 9999px, 5px, 0);
   }
   95% {
-    clip: rect(40px, 9999px, 56px, 0);
+    clip: rect(26px, 9999px, 70px, 0);
   }
   100% {
-    clip: rect(38px, 9999px, 93px, 0);
+    clip: rect(3px, 9999px, 97px, 0);
   }
 }
 
 @keyframes noise-anim {
   0% {
-    clip: rect(35px, 9999px, 29px, 0);
+    clip: rect(46px, 9999px, 43px, 0);
   }
   5% {
-    clip: rect(46px, 9999px, 5px, 0);
+    clip: rect(53px, 9999px, 45px, 0);
   }
   10% {
-    clip: rect(4px, 9999px, 61px, 0);
+    clip: rect(57px, 9999px, 61px, 0);
   }
   15% {
-    clip: rect(50px, 9999px, 8px, 0);
+    clip: rect(31px, 9999px, 29px, 0);
   }
   20% {
-    clip: rect(87px, 9999px, 78px, 0);
+    clip: rect(74px, 9999px, 24px, 0);
   }
   25% {
-    clip: rect(15px, 9999px, 53px, 0);
+    clip: rect(97px, 9999px, 93px, 0);
   }
   30% {
-    clip: rect(32px, 9999px, 87px, 0);
+    clip: rect(89px, 9999px, 26px, 0);
   }
   35% {
-    clip: rect(16px, 9999px, 58px, 0);
+    clip: rect(47px, 9999px, 21px, 0);
   }
   40% {
-    clip: rect(3px, 9999px, 9px, 0);
+    clip: rect(10px, 9999px, 50px, 0);
   }
   45% {
-    clip: rect(63px, 9999px, 88px, 0);
+    clip: rect(13px, 9999px, 35px, 0);
   }
   50% {
-    clip: rect(56px, 9999px, 93px, 0);
+    clip: rect(18px, 9999px, 20px, 0);
   }
   55% {
-    clip: rect(11px, 9999px, 41px, 0);
+    clip: rect(26px, 9999px, 23px, 0);
   }
   60% {
-    clip: rect(16px, 9999px, 29px, 0);
+    clip: rect(61px, 9999px, 96px, 0);
   }
   65% {
-    clip: rect(82px, 9999px, 43px, 0);
+    clip: rect(18px, 9999px, 9px, 0);
   }
   70% {
-    clip: rect(35px, 9999px, 85px, 0);
+    clip: rect(83px, 9999px, 32px, 0);
   }
   75% {
-    clip: rect(72px, 9999px, 93px, 0);
+    clip: rect(98px, 9999px, 100px, 0);
   }
   80% {
-    clip: rect(25px, 9999px, 11px, 0);
+    clip: rect(89px, 9999px, 1px, 0);
   }
   85% {
-    clip: rect(26px, 9999px, 88px, 0);
+    clip: rect(98px, 9999px, 10px, 0);
   }
   90% {
-    clip: rect(45px, 9999px, 91px, 0);
+    clip: rect(27px, 9999px, 5px, 0);
   }
   95% {
-    clip: rect(40px, 9999px, 56px, 0);
+    clip: rect(26px, 9999px, 70px, 0);
   }
   100% {
-    clip: rect(38px, 9999px, 93px, 0);
+    clip: rect(3px, 9999px, 97px, 0);
   }
 }
 .error:after {
@@ -11493,140 +11497,140 @@ form.user .btn-user {
 
 @-webkit-keyframes noise-anim-2 {
   0% {
-    clip: rect(36px, 9999px, 25px, 0);
+    clip: rect(2px, 9999px, 68px, 0);
   }
   5% {
-    clip: rect(72px, 9999px, 81px, 0);
+    clip: rect(64px, 9999px, 80px, 0);
   }
   10% {
-    clip: rect(1px, 9999px, 97px, 0);
+    clip: rect(8px, 9999px, 24px, 0);
   }
   15% {
-    clip: rect(88px, 9999px, 62px, 0);
+    clip: rect(50px, 9999px, 1px, 0);
   }
   20% {
-    clip: rect(21px, 9999px, 41px, 0);
+    clip: rect(10px, 9999px, 72px, 0);
   }
   25% {
-    clip: rect(20px, 9999px, 17px, 0);
+    clip: rect(44px, 9999px, 18px, 0);
   }
   30% {
-    clip: rect(97px, 9999px, 79px, 0);
+    clip: rect(38px, 9999px, 29px, 0);
   }
   35% {
-    clip: rect(9px, 9999px, 66px, 0);
+    clip: rect(11px, 9999px, 78px, 0);
   }
   40% {
-    clip: rect(16px, 9999px, 18px, 0);
+    clip: rect(9px, 9999px, 16px, 0);
   }
   45% {
-    clip: rect(3px, 9999px, 90px, 0);
+    clip: rect(94px, 9999px, 74px, 0);
   }
   50% {
-    clip: rect(42px, 9999px, 65px, 0);
+    clip: rect(70px, 9999px, 68px, 0);
   }
   55% {
-    clip: rect(87px, 9999px, 51px, 0);
+    clip: rect(98px, 9999px, 67px, 0);
   }
   60% {
-    clip: rect(68px, 9999px, 100px, 0);
+    clip: rect(4px, 9999px, 50px, 0);
   }
   65% {
-    clip: rect(13px, 9999px, 45px, 0);
+    clip: rect(25px, 9999px, 37px, 0);
   }
   70% {
-    clip: rect(84px, 9999px, 8px, 0);
+    clip: rect(23px, 9999px, 2px, 0);
   }
   75% {
-    clip: rect(9px, 9999px, 67px, 0);
+    clip: rect(34px, 9999px, 100px, 0);
   }
   80% {
-    clip: rect(75px, 9999px, 22px, 0);
+    clip: rect(15px, 9999px, 100px, 0);
   }
   85% {
-    clip: rect(92px, 9999px, 85px, 0);
+    clip: rect(52px, 9999px, 26px, 0);
   }
   90% {
-    clip: rect(54px, 9999px, 70px, 0);
+    clip: rect(37px, 9999px, 53px, 0);
   }
   95% {
-    clip: rect(84px, 9999px, 61px, 0);
+    clip: rect(76px, 9999px, 57px, 0);
   }
   100% {
-    clip: rect(10px, 9999px, 31px, 0);
+    clip: rect(1px, 9999px, 25px, 0);
   }
 }
 
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(36px, 9999px, 25px, 0);
+    clip: rect(2px, 9999px, 68px, 0);
   }
   5% {
-    clip: rect(72px, 9999px, 81px, 0);
+    clip: rect(64px, 9999px, 80px, 0);
   }
   10% {
-    clip: rect(1px, 9999px, 97px, 0);
+    clip: rect(8px, 9999px, 24px, 0);
   }
   15% {
-    clip: rect(88px, 9999px, 62px, 0);
+    clip: rect(50px, 9999px, 1px, 0);
   }
   20% {
-    clip: rect(21px, 9999px, 41px, 0);
+    clip: rect(10px, 9999px, 72px, 0);
   }
   25% {
-    clip: rect(20px, 9999px, 17px, 0);
+    clip: rect(44px, 9999px, 18px, 0);
   }
   30% {
-    clip: rect(97px, 9999px, 79px, 0);
+    clip: rect(38px, 9999px, 29px, 0);
   }
   35% {
-    clip: rect(9px, 9999px, 66px, 0);
+    clip: rect(11px, 9999px, 78px, 0);
   }
   40% {
-    clip: rect(16px, 9999px, 18px, 0);
+    clip: rect(9px, 9999px, 16px, 0);
   }
   45% {
-    clip: rect(3px, 9999px, 90px, 0);
+    clip: rect(94px, 9999px, 74px, 0);
   }
   50% {
-    clip: rect(42px, 9999px, 65px, 0);
+    clip: rect(70px, 9999px, 68px, 0);
   }
   55% {
-    clip: rect(87px, 9999px, 51px, 0);
+    clip: rect(98px, 9999px, 67px, 0);
   }
   60% {
-    clip: rect(68px, 9999px, 100px, 0);
+    clip: rect(4px, 9999px, 50px, 0);
   }
   65% {
-    clip: rect(13px, 9999px, 45px, 0);
+    clip: rect(25px, 9999px, 37px, 0);
   }
   70% {
-    clip: rect(84px, 9999px, 8px, 0);
+    clip: rect(23px, 9999px, 2px, 0);
   }
   75% {
-    clip: rect(9px, 9999px, 67px, 0);
+    clip: rect(34px, 9999px, 100px, 0);
   }
   80% {
-    clip: rect(75px, 9999px, 22px, 0);
+    clip: rect(15px, 9999px, 100px, 0);
   }
   85% {
-    clip: rect(92px, 9999px, 85px, 0);
+    clip: rect(52px, 9999px, 26px, 0);
   }
   90% {
-    clip: rect(54px, 9999px, 70px, 0);
+    clip: rect(37px, 9999px, 53px, 0);
   }
   95% {
-    clip: rect(84px, 9999px, 61px, 0);
+    clip: rect(76px, 9999px, 57px, 0);
   }
   100% {
-    clip: rect(10px, 9999px, 31px, 0);
+    clip: rect(1px, 9999px, 25px, 0);
   }
 }
 .error:before {
   content: attr(data-text);
   position: absolute;
   left: -2px;
-  text-shadow: 1px 0 #4e73df;
+  text-shadow: 1px 0 #3248f2;
   top: 0;
   color: #5a5c69;
   background: #f8f9fc;

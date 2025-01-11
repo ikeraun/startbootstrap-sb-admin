@@ -16,7 +16,7 @@ $gray-800: #5a5c69 !default;
 $gray-900: #3a3b45 !default;
 $black: #000 !default;
 
-$blue: #4e73df !default;
+$blue: #3248f2 !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #e83e8c !default;
@@ -95,4 +95,7 @@ input.form-control:not([disabled]), textarea.form-control:not([disabled]), selec
 }
 .card-header h5 {
    font-size: 1.2rem;
+}
+ul.sidebar {
+   background-color: #121927;   
 }
