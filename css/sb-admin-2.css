@@ -23,11 +23,11 @@ input.form-control:not([disabled]), textarea.form-control:not([disabled]), selec
 }
 
 .card-header h5, .card-header .h5 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 ul.sidebar {
-  background-color: #121927;
+  background-color: #0d121c;
 }
 
 /*!
