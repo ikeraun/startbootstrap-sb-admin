@@ -428,44 +428,46 @@
       var triggerChangeEvent = true;
       var addAriaPressed = true;
       var rootElement = $__default['default'](this._element).closest(SELECTOR_DATA_TOGGLES)[0];
-
+    
       if (rootElement) {
         var input = this._element.querySelector(SELECTOR_INPUT);
-
+    
         if (input) {
           if (input.type === 'radio') {
             if (input.checked && this._element.classList.contains(CLASS_NAME_ACTIVE)) {
               triggerChangeEvent = false;
             } else {
               var activeElement = rootElement.querySelector(SELECTOR_ACTIVE);
-
+    
               if (activeElement) {
                 $__default['default'](activeElement).removeClass(CLASS_NAME_ACTIVE);
               }
             }
           }
-
+    
           if (triggerChangeEvent) {
             // if it's not a radio button or checkbox don't add a pointless/invalid checked property to the input
             if (input.type === 'checkbox' || input.type === 'radio') {
               input.checked = !this._element.classList.contains(CLASS_NAME_ACTIVE);
             }
-
-            if (!this.shouldAvoidTriggerChange) {
+    
+            // Only trigger change if shouldAvoidTriggerChange is explicitly false
+            // This fixes the bug where change is always triggered regardless of shouldAvoidTriggerChange value
+            if (this.shouldAvoidTriggerChange === false) {
               $__default['default'](input).trigger('change');
             }
           }
-
+    
           input.focus();
           addAriaPressed = false;
         }
       }
-
+    
       if (!(this._element.hasAttribute('disabled') || this._element.classList.contains('disabled'))) {
         if (addAriaPressed) {
           this._element.setAttribute('aria-pressed', !this._element.classList.contains(CLASS_NAME_ACTIVE));
         }
-
+    
         if (triggerChangeEvent) {
           $__default['default'](this._element).toggleClass(CLASS_NAME_ACTIVE);
         }

@@ -20,6 +20,63 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+    <!-- Custom Styles for UI/UX Enhancements -->
+    <style>
+        .form-control:focus {
+            border-color: #4e73df;
+            box-shadow: 0 0 5px rgba(78, 115, 223, 0.75);
+        }
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-user {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-user:hover {
+            background-color: #3e8e41;
+            transform: scale(1.05);
+        }
+
+        .btn-google:hover {
+            background-color: #db4437;
+            transform: scale(1.05);
+        }
+
+        .btn-facebook:hover {
+            background-color: #3b5998;
+            transform: scale(1.05);
+        }
+
+        .bg-gradient-primary {
+            background: linear-gradient(90deg, rgba(233, 162, 44, 1) 0%, rgba(116, 70, 198, 1) 100%);
+        }
+
+        .text-gray-900 {
+            color: #3a3a3a;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .p-5 {
+            padding: 3rem;
+        }
+
+        .container {
+            max-width: 1200px;
+        }
+    </style>
+
 </head>
 
 <body class="bg-gradient-primary">
@@ -45,11 +102,11 @@
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address...">
+                                                placeholder="Enter Email Address..." required>
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
+                                                id="exampleInputPassword" placeholder="Password" required>
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
