@@ -1,4 +1,6 @@
-// Topbar
+@use "sass:color";\n\n// Topbar
+@use "sass:color";
+@use "../variables" as *;
 .topbar {
   height: $topbar-base-height;
   #sidebarToggleTop {
@@ -115,7 +117,7 @@
   .navbar-nav {
     .nav-item {
       .nav-link {
-        color: fade-out($white, 0.2);
+        color: rgba($white, 0.8);
         &:hover {
           color: $white;
         }

@@ -10,7 +10,7 @@ const header = require("gulp-header");
 const merge = require("merge-stream");
 const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
-const sass = require("gulp-sass");
+const sass = require("gulp-sass")(require('sass'));
 const uglify = require("gulp-uglify");
 
 // Load package.json for banner
@@ -61,8 +61,8 @@ function modules() {
   // dataTables
   var dataTables = gulp.src([
       './node_modules/datatables.net/js/*.js',
-      './node_modules/datatables.net-bs4/js/*.js',
-      './node_modules/datatables.net-bs4/css/*.css'
+      './node_modules/datatables.net-bs5/js/*.js',
+      './node_modules/datatables.net-bs5/css/*.css'
     ])
     .pipe(gulp.dest('./vendor/datatables'));
   // Font Awesome
@@ -77,7 +77,10 @@ function modules() {
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'));
-  return merge(bootstrapJS, bootstrapSCSS, chartJS, dataTables, fontAwesome, jquery, jqueryEasing);
+  // Popper
+  var popper = gulp.src('./node_modules/@popperjs/core/dist/umd/popper.min.js')
+    .pipe(gulp.dest('./vendor/popper'));
+  return merge(bootstrapJS, bootstrapSCSS, chartJS, dataTables, fontAwesome, jquery, jqueryEasing, popper);
 }
 
 // CSS task

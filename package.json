@@ -1,11 +1,11 @@
 {
     "title": "SB Admin 2",
     "name": "startbootstrap-sb-admin-2",
-    "version": "4.1.4",
+    "version": "5.0.0",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
-    "description": "An open source Bootstrap 4 admin theme.",
+    "description": "An open source Bootstrap 5 admin theme",
     "keywords": [
         "css",
         "sass",
@@ -32,9 +32,10 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.15.3",
-        "bootstrap": "4.6.0",
+        "@popperjs/core": "^2.11.8",
+        "bootstrap": "5.3.2",
         "chart.js": "2.9.4",
-        "datatables.net-bs4": "1.10.24",
+        "datatables.net-bs5": "1.13.6",
         "jquery": "3.6.0",
         "jquery.easing": "^1.4.1"
     },
@@ -47,8 +48,9 @@
         "gulp-header": "2.0.9",
         "gulp-plumber": "^1.2.1",
         "gulp-rename": "2.0.0",
-        "gulp-sass": "4.1.0",
+        "gulp-sass": "5.1.0",
         "gulp-uglify": "3.0.2",
-        "merge-stream": "2.0.0"
+        "merge-stream": "2.0.0",
+        "sass": "1.62.1"
     }
 }
