@@ -31,8 +31,13 @@ $cyan: #36b9cc !default;
 $brand-google: #ea4335 !default;
 $brand-facebook: #3b5998 !default;
 
+// Import Sass utilities
+@use "sass:color";
+@use "sass:math";
+@use "sass:map";
+
 // Set Contrast Threshold
-$yiq-contrasted-threshold: 195 !default;
+$min-contrast-ratio: 3 !default;
 
 // Typography
 $body-color: $gray-600 !default;
@@ -50,7 +55,7 @@ $box-shadow: 0 0.15rem 1.75rem 0 rgba($gray-900, .15) !default;
 
 // Borders Radius
 $border-radius: 0.35rem !default;
-$border-color: darken($gray-200, 2%) !default;
+$border-color: color.adjust($gray-200, $lightness: -2%) !default;
 
 // Spacing Variables
 // Change below variable if the height of the navbar changes
