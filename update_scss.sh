@@ -1,25 +1,14 @@
 #!/bin/bash
 
-# Add sass:color and variables import to all SCSS files
-find scss/ -name "_*.scss" -not -name "_variables.scss" | while read file; do
-  # Check if the file doesn't already have the imports
-  if ! grep -q "@use \"variables\"" "$file"; then
-    # Get the relative path to the variables file
-    rel_path=$(echo "$file" | sed -E 's|scss//(.*)_.*\.scss|../|g')
-    rel_path=$(echo "$rel_path" | sed -E 's|scss/(.*)_.*\.scss|../|g')
-    rel_path=$(echo "$rel_path" | sed -E 's|scss/_.*\.scss||g')
-    
-    # Add the imports at the top of the file
-    sed -i '' -e '1s/^/\\n/' -e '1s/^/@use "'"$rel_path"'variables" as *;\\n/' "$file"
-    
-    # Add sass:color if needed
-    if grep -q "color\.adjust\|rgba" "$file"; then
-      sed -i '' -e '1s/^/\\n/' -e '1s/^/@use "sass:color";\\n/' "$file"
-    fi
-    
-    # Add sass:math if needed
-    if grep -q "math\.div" "$file"; then
-      sed -i '' -e '1s/^/\\n/' -e '1s/^/@use "sass:math";\\n/' "$file"
-    fi
-  fi
-done
+# Script to update SCSS files for Dart Sass 2.0 compatibility
+
+# Add sass:math import to necessary files
+find scss -name "*.scss" -type f -exec grep -l "calc\|/" {} \; | xargs -I{} sed -i '' '1s/^/@use "sass:math";\n/' {}
+
+# Fix division operations in calc expressions
+find scss -name "*.scss" -type f -exec sed -i '' 's/calc(\([^)]\+\)\([a-zA-Z0-9_$#{}]\+\) \/ \([0-9.]\+\)\([^)]\+\))/calc(\1math.div(\2, \3)\4)/g' {} \;
+
+# Fix other division operations
+find scss -name "*.scss" -type f -exec sed -i '' 's/\([a-zA-Z0-9_$#{}]\+\) \/ \([0-9.]\+\)/math.div(\1, \2)/g' {} \;
+
+echo "SCSS files updated for Dart Sass 2.0 compatibility!"

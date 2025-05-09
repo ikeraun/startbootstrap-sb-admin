@@ -91,6 +91,7 @@ function css() {
     .pipe(sass({
       outputStyle: "expanded",
       includePaths: "./node_modules",
+      quietDeps: true // Silence dependency warnings
     }))
     .on("error", sass.logError)
     .pipe(autoprefixer({

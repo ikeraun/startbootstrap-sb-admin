@@ -1,6 +1,4 @@
-@use "sass:color";\n\n// Topbar
-@use "sass:color";
-@use "../variables" as *;
+// Topbar
 .topbar {
   height: $topbar-base-height;
   #sidebarToggleTop {
@@ -35,66 +33,49 @@
       &:focus {
         outline: none;
       }
+      .badge-counter {
+        position: absolute;
+        transform: scale(0.7);
+        transform-origin: top right;
+        right: .25rem;
+        margin-top: -.25rem;
+      }
+      .img-profile {
+        height: 2rem;
+        width: 2rem;
+      }
     }
-    &:focus {
-      outline: none;
-    }
-  }
-  .dropdown {
-    position: static;
     .dropdown-menu {
+      position: absolute;
+      left: auto;
+      right: 0;
       width: calc(100% - #{$grid-gutter-width});
-      right: $grid-gutter-width / 2;
     }
   }
-  .dropdown-list {
-    padding: 0;
-    border: none;
-    overflow: hidden;
-    .dropdown-header {
-      background-color: $primary;
-      border: 1px solid $primary;
-      padding-top: 0.75rem;
-      padding-bottom: 0.75rem;
-      color: $white;
-    }
-    .dropdown-item {
-      white-space: normal;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      border-left: 1px solid $border-color;
-      border-right: 1px solid $border-color;
-      border-bottom: 1px solid $border-color;
-      line-height: 1.3rem;
-      .dropdown-list-image {
-        position: relative;
-        height: 2.5rem;
-        width: 2.5rem;
-        img {
-          height: 2.5rem;
-          width: 2.5rem;
-        }
-        .status-indicator {
-          background-color: $gray-200;
-          height: 0.75rem;
-          width: 0.75rem;
-          border-radius: 100%;
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          border: .125rem solid $white;
-        }
-      }
-      .text-truncate {
-        max-width: 10rem;
-      }
-      &:active {
-        background-color: $gray-200;
-        color: $gray-900;
-      }
-    }
+}
+
+// Topbar Dropdown Animation
+.animated--grow-in,
+.topbar .dropdown-menu{
+  animation-name: growIn;
+  animation-duration: 200ms;
+  animation-timing-function: transform cubic-bezier(0.18, 1.25, 0.4, 1), opacity cubic-bezier(0, 1, 0.4, 1);
+}
+
+@keyframes growIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
   }
-  @include media-breakpoint-up(sm) {
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+// Responsive Topbar Adjustments
+@include media-breakpoint-up(sm) {
+  .topbar {
     .dropdown {
       position: relative;
       .dropdown-menu {
@@ -105,42 +86,22 @@
     .dropdown-list {
       width: 20rem !important;
       .dropdown-item {
-        .text-truncate {
-          max-width: 13.375rem;
-        }
+        white-space: normal;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+        line-height: 1.3rem;
       }
     }
-  }
-}
-
-.topbar.navbar-dark {
-  .navbar-nav {
-    .nav-item {
-      .nav-link {
-        color: rgba($white, 0.8);
-        &:hover {
-          color: $white;
-        }
-        &:active {
-          color: $white;
-        }
-      }
+    .dropdown-user {
+      right: 0;
     }
-  }
-}
-
-.topbar.navbar-light {
-  .navbar-nav {
-    .nav-item {
-      .nav-link {
-        color: $gray-400;
-        &:hover {
-          color: $gray-500;
-        }
-        &:active {
-          color: $gray-600;
-        }
-      }
+    .topbar-divider {
+      border-right: 1px solid $border-color;
+      height: calc(#{$topbar-base-height} - 2rem);
+      margin: auto 1rem;
     }
   }
 }
